@@ -16,7 +16,7 @@ require_once cot_incfile('page', 'module');
  */
 function pagefieldbypid($pid, $pfield = 'text')
 {
-	global $db, $db_pages, $cfg, $last_pagefield;
+	global $db, $db_pages, $cfg, $last_pagefield, $cache;
 
 	$last_pagefield = array();
 
