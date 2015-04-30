@@ -32,11 +32,11 @@ function pagefieldbypid($pid, $pfield = 'text')
 
 		if ($res->rowCount() > 0)
 		{
-			$last_pagefield = cot_generate_pagetags($res->fetch(), '', 0, $usr['isadmin'])
+			$last_pagefield = cot_generate_pagetags($res->fetch(), '', 0, $usr['isadmin']);
 
 			if ($cache) $cache->disk->store($pid.'-'.$pfield, $last_pagefield, 'pagefieldbypid');
 
-			$pfield = ($pfield != 'text' && $db->fieldExists($db_pages, 'page_'.$pfield)) ? $pfield : ($pfield != 'text' ? false : $pfield);
+			$pfield = ($pfield != 'text' && $db->fieldExists($db_pages, 'page_'.$pfield)) ? strtoupper($pfield) : ($pfield != 'text' ? false : strtoupper($pfield));
 
 			return $pfield ? $last_pagefield[$pfield] : 'Err. Unknown field '.$pfield;
 		}

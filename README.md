@@ -7,8 +7,8 @@ Description
 -----------
 
 Use this plugin to fetch any page field by its id or alias using global tags 
-like {PHP|pagefieldbypid(123, \'text\')} where 123 is an ID of a page and «text» is fetched field or 
-{PHP|pagefieldbyid(\'alias\')} where «alias» is an ALIAS of a page/
+like {PHP|pagefieldbypid(123, 'text')} where 123 is an ID of a page and «text» is fetched field or 
+{PHP|pagefieldbyid('alias')} where «alias» is an ALIAS of a page.
 
 
 Requirements
@@ -61,18 +61,18 @@ Licence
 History
 -------
 
-* 1.0.0					Reliz for Genoa
-* 2.0.0	by Trustmaster	Reliz for Siena
-* 2.1.0	by Macik		Add extending function for common case usege
+* 1.0.0					Relize for Genoa
+* 2.0.0	by Trustmaster	Relize for Siena
+* 2.1.0	by Macik		Add extending function for common case usage
 * 3.0.0	by Dayver		Renaming and added cache and much more functionals
 
 
 Authors
 ------
 
-[Vladimir Sibirov](https://github.com/trustmaster)
-[Macik](https://github.com/macik)
-[Pavel Tkachenko aka Dayver](https://github.com/Dayver)
+* [Vladimir Sibirov](https://github.com/trustmaster)
+* [Macik](https://github.com/macik)
+* [Pavel Tkachenko aka Dayver](https://github.com/Dayver)
 
 References
 ----------
